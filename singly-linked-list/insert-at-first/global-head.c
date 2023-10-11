@@ -3,11 +3,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct Node
+typedef struct Node // structure definition
 {
     int data;
     struct Node *next;
-}Node;
+} Node;
 
 Node *head = NULL; // declaring the head pointer
 
@@ -27,10 +27,12 @@ int main(void)
 
 void insertAtBeginning(int data)
 {
-   Node *temp = malloc(sizeof (Node));
-   temp->data = data;
-   temp->next = head;
-   head = temp;
+    Node *temp = malloc(sizeof(Node));
+    temp->data = data;
+
+    // insert at beginning
+    temp->next = head;
+    head = temp;
 }
 
 void display()
