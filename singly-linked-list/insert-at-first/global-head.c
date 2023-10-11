@@ -27,7 +27,7 @@ int main(void)
 
 void insertAtBeginning(int data)
 {
-    Node *temp = malloc(sizeof(Node));
+    Node *temp = malloc(sizeof (Node));
     temp->data = data;
 
     // insert at beginning
