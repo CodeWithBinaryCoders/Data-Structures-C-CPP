@@ -183,26 +183,26 @@ void display()
 
 int main()
 {
-    insertAtEnd(1);
-    insertAtEnd(2);
-    insertAtEnd(3);
-    insertAtEnd(4);
-    insertAtEnd(5);
-    insertAtEnd(6);
-    insertAtEnd(7);
+    insertAtEnd(1); // 1
+    insertAtEnd(2); // 1 2
+    insertAtEnd(3); // 1 2 3
+    insertAtEnd(4); // 1 2 3 4
+    insertAtEnd(5); // 1 2 3 4 5
+    insertAtEnd(6); // 1 2 3 4 5 6
+    insertAtEnd(7);  // 1 2 3 4 5 6 7
 
-    deleteFromFirst();
+    deleteFromFirst(); // 2 3 4 5 6 7
 
-    deleteFromEnd();
+    deleteFromEnd(); // 2 3 4 5 6
 
-    deleteFromPosition(2);
+    deleteFromPosition(2); // 2 3 5 6
 
-    deleteFromFirst();
+    deleteFromFirst(); // 3 5 6
 
-    deleteFromEnd();
+    deleteFromEnd(); // 3 5
 
 
-    display();
+    display(); // 3 5
 
     return 0;
 }
