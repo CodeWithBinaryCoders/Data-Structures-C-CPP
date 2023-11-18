@@ -13,7 +13,7 @@ public:
     }
 };
 
-class linkedList
+class LinkedList
 {
     Node *tail = nullptr;
     int count = 0;
@@ -112,7 +112,7 @@ public:
 
 int main()
 {
-    linkedList l;
+    LinkedList l;
 
     l.insertAtBeginning(2);
     l.insertAtBeginning(1);
