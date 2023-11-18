@@ -18,11 +18,11 @@ void displayList();
 
 int main()
 {
-    insertAtLast(1);
-    insertAtLast(2);
-    insertAtLast(3);
+    insertAtLast(1); // 1
+    insertAtLast(2); // 1 2
+    insertAtLast(3); // 1 2 3
 
-    displayList();
+    displayList(); // 1 2 3
 
     return 0;
 }
