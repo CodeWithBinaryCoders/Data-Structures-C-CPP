@@ -114,17 +114,17 @@ int main()
 {
     LinkedList l;
 
-    l.insertAtBeginning(2);
-    l.insertAtBeginning(1);
+    l.insertAtBeginning(2); // 2
+    l.insertAtBeginning(1); // 1 2
 
-    l.insertAtEnd(3);
-    l.insertAtEnd(4);
+    l.insertAtEnd(3); // 1 2 3
+    l.insertAtEnd(4); // 1 2 3 4
 
-    l.insert(10, 0);
-    l.insert(20, 5);
-    l.insert(30, 3);
+    l.insert(10, 0); // 10 1 2 3 4
+    l.insert(20, 5); // 10 1 2 3 4 20
+    l.insert(30, 3); // 10 1 2 30 3 4 20
 
-    l.display();
+    l.display(); // 10 1 2 30 3 4 20
 
     return 0;
 }
