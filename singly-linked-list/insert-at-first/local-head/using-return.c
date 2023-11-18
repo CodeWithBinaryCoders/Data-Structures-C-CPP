@@ -16,9 +16,9 @@ int main()
 {
     Node *head = NULL;
 
-    head = insertAtFirst(head, 3);
-    head = insertAtFirst(head, 2);
-    head = insertAtFirst(head, 1);
+    head = insertAtFirst(head, 3); // 3
+    head = insertAtFirst(head, 2); // 2 3
+    head = insertAtFirst(head, 1); // 1 2 3
 
     showList(head);
     return 0;

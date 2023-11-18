@@ -16,11 +16,11 @@ int main()
 {
     Node *head = NULL;
 
-    insertAtFirst(&head, 3);
-    insertAtFirst(&head, 2);
-    insertAtFirst(&head, 1);
+    insertAtFirst(&head, 3); // 3
+    insertAtFirst(&head, 2); // 2 3
+    insertAtFirst(&head, 1); // 1 2 3
 
-    showList(head);
+    showList(head); // 1 2 3
     return 0;
 }
 
