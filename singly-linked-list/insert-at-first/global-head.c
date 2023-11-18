@@ -16,11 +16,11 @@ void display();
 
 int main(void)
 {
-    insertAtBeginning(30);
-    insertAtBeginning(20);
-    insertAtBeginning(10);
+    insertAtBeginning(30); // 30
+    insertAtBeginning(20); // 20 30
+    insertAtBeginning(10); // 10 20 30
 
-    display();
+    display(); // 10 20 30
 
     return 0;
 }
