@@ -18,15 +18,15 @@ void display();
 
 int main()
 {
-    insertAtBeginning(2);
-    insertAtBeginning(1);
-    insertAtEnd(3);
-    insertAtEnd(4);
-    insert(10, 0);
-    insert(20, 5);
-    insert(30, 3);
+    insertAtBeginning(2); // 2
+    insertAtBeginning(1); // 1 2
+    insertAtEnd(3); // 1 2 3
+    insertAtEnd(4); // 1 2 3 4
+    insert(10, 0); // 10 1 2 3 4
+    insert(20, 5); // 10 1 2 3 4 20
+    insert(30, 3); // 10 1 2 30 3 4 20
 
-    display();
+    display(); // 10 1 2 30 3 4 20
 
     return 0;
 }
