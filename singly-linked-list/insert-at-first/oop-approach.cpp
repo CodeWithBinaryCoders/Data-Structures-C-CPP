@@ -41,21 +41,21 @@ int main()
 {
     LinkedList l1;
     
-    l1.insertAtBeginning(5);
-    l1.insertAtBeginning(4);
-    l1.insertAtBeginning(3);
-    l1.insertAtBeginning(2);
-    l1.insertAtBeginning(1);
+    l1.insertAtBeginning(5); // 5
+    l1.insertAtBeginning(4); // 4 5
+    l1.insertAtBeginning(3); // 3 4 5
+    l1.insertAtBeginning(2); // 2 3 4 5
+    l1.insertAtBeginning(1); // 1 2 3 4 5
 
-    l1.displayList();
+    l1.displayList(); // 1 2 3 4 5
     
     LinkedList l2;
 
-    l2.insertAtBeginning(50);
-    l2.insertAtBeginning(40);
-    l2.insertAtBeginning(30);
+    l2.insertAtBeginning(50); // 50
+    l2.insertAtBeginning(40); // 40 50
+    l2.insertAtBeginning(30); // 30 40 50
     
-    l2.displayList();
+    l2.displayList(); // 30 40 50
 
     return 0;
 }
