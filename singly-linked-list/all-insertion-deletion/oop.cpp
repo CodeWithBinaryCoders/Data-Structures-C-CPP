@@ -92,7 +92,8 @@ public:
         else if (countNode == 1)
         {
             delete head;
-            head = tail = NULL;
+            head = NULL;
+            tail = NULL;
         }
         else
         {
