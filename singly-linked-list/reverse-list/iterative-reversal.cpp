@@ -70,7 +70,7 @@ int main()
 
     l.display(); // 1 2 3
 
-    l.reverseList();
+    l.reverseList(); // 3 2 1
 
     cout << endl << "Reversed list:" << endl;
     l.display(); // 3 2 1
