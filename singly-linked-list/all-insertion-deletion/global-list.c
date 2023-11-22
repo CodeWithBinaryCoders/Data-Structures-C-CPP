@@ -145,18 +145,18 @@ void displayList()
 
 int main()
 {
-    insertAtFirst(5);
-    insertAtFirst(4);
-    insertAtFirst(3);
-    insertAtFirst(2);
-    insertAtFirst(1);
+    insertAtFirst(5); // 5
+    insertAtFirst(4); // 4 5
+    insertAtFirst(3); // 3 4 5
+    insertAtFirst(2); // 2 3 4 5
+    insertAtFirst(1); // 1 2 3 4 5
 
-    deleteFromFirst();
-    deleteFromLast();
-    deleteFromAny(1);
-    deleteFromAny(0);
+    deleteFromFirst(); // 2 3 4 5
+    deleteFromLast(); // 2 3 4
+    deleteFromAny(1); // 2 4
+    deleteFromAny(0); // 4
 
-    displayList();
+    displayList(); // 4
 
     return 0;
 }

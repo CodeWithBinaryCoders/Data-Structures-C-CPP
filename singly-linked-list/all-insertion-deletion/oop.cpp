@@ -144,29 +144,30 @@ public:
 int main()
 {
     LinkedList l1;
-    l1.insertAtFirst(5);
-    l1.insertAtFirst(4);
-    l1.insertAtFirst(3);
-    l1.insertAtFirst(2);
-    l1.insertAtFirst(1);
 
-    l1.displayList();
+    l1.insertAtFirst(5); // 5
+    l1.insertAtFirst(4); // 4 5
+    l1.insertAtFirst(3); // 3 4 5
+    l1.insertAtFirst(2); // 2 3 4 5
+    l1.insertAtFirst(1); // 1 2 3 4 5
 
-    l1.deleteFromFirst();
+    l1.displayList(); // 1 2 3 4 5
 
-    l1.displayList();
+    l1.deleteFromFirst(); // 2 3 4 5
 
-    l1.deleteFromLast();
+    l1.displayList(); // 2 3 4 5
 
-    l1.displayList();
+    l1.deleteFromLast(); // 2 3 4
 
-    l1.deleteFromAny(1);
+    l1.displayList(); // 2 3 4
 
-    l1.displayList();
+    l1.deleteFromAny(1); // 2 4
+
+    l1.displayList(); // 2 4
     
-    l1.deleteFromAny(0);
+    l1.deleteFromAny(0); // 4
 
-    l1.displayList();
+    l1.displayList(); // 4
 
     return 0;
 }
