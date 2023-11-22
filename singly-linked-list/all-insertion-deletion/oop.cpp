@@ -22,8 +22,10 @@ public:
     {
         Node *newNode = new Node(data);
         if (!countNode) // if (countNode == 0)
+        {
             head = newNode;
             tail = newNode;
+        }
         else
         {
             newNode->next = head;
@@ -36,8 +38,10 @@ public:
     {
         Node *newNode = new Node(data);
         if (!countNode) // if (countNode == 0)
+        {
             head = newNode;
             tail = newNode;
+        }
         else
         {
             tail->next = newNode;
