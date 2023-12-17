@@ -12,13 +12,13 @@ Node *top = NULL;
 Node *getNode(int data)
 {
     Node *newNode = malloc(sizeof(Node));
-    
-    if(!newNode) // if malloc() fails
+
+    if (!newNode) // if malloc() fails
         exit(1);
-    
+
     newNode->data = data;
     newNode->next = NULL;
-    
+
     return newNode;
 }
 
@@ -57,8 +57,8 @@ int main()
     push(1);
 
     pop();
-    
+
     peek();
-    
+
     return 0;
 }
