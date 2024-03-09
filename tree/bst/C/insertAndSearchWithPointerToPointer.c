@@ -58,7 +58,7 @@ void insert(Node **root, int data)
         // insert at left sub-tree
         insert(&(*root)->left, data); // insert(root_of_left_sub_tree, data_to_be_inserted)
     }
-    else // data > root->data
+    else
     {
         // insert at right sub-tree
         insert(&(*root)->right, data); // insert(root_of_right_sub_tree, data_to_be_inserted)
